@@ -1,0 +1,52 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="VIS/dist/vis.js"></script>
+      <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+      var nodes = [{'group': 'Event', 'id': 182, 'label': '谢雕'}, {'group': 'Event', 'id': 19, 'label': '关键词'}, {'group': 'Event', 'id': 56, 'label': '凯旋'}, {'group': 'Event', 'id': 58, 'label': '同学'}, {'group': 'Event', 'id': 60, 'label': '家人'}, {'group': 'Event', 'id': 113, 'label': '北京'}, {'group': 'Event', 'id': 141, 'label': '南都'}, {'group': 'Event', 'id': 68, 'label': '记者'}, {'group': 'Event', 'id': 64, 'label': '高中'}, {'group': 'Event', 'id': 70, 'label': '警方'}, {'group': 'Event', 'id': 18, 'label': '告诉'}, {'group': 'Event', 'id': 20, 'label': '研究生'}, {'group': 'Event', 'id': 23, 'label': '患有'}, {'group': 'Event', 'id': 25, 'label': '赴京'}, {'group': 'Event', 'id': 27, 'label': '生长'}, {'group': 'Event', 'id': 29, 'label': '读高中'}, {'group': 'Event', 'id': 31, 'label': '考上西安电子科技大学'}, {'group': 'Event', 'id': 53, 'label': '告诉记者'}, {'group': 'Event', 'id': 35, 'label': '见到'}, {'group': 'Event', 'id': 37, 'label': '意识带来'}, {'group': 'Event', 'id': 39, 'label': '说话'}, {'group': 'Event', 'id': 41, 'label': '发生争执'}, {'group': 'Event', 'id': 43, 'label': '发现凯旋'}, {'group': 'Event', 'id': 45, 'label': '加入微信群'}, {'group': 'Event', 'id': 47, 'label': '称凯旋'}, {'group': 'Event', 'id': 49, 'label': '遇害'}, {'group': 'Event', 'id': 73, 'label': '高频词'}, {'group': 'Event', 'id': 72, 'label': '聚会'}, {'group': 'Event', 'id': 93, 'label': '人物'}, {'group': 'Event', 'id': 184, 'label': '周'}, {'group': 'Event', 'id': 105, 'label': '地名'}, {'group': 'Event', 'id': 165, 'label': '周凯旋'}, {'group': 'Event', 'id': 183, 'label': '中科院信息工程研究所'}, {'group': 'Event', 'id': 103, 'label': '机构'}, {'group': 'Event', 'id': 156, 'label': '垫江中学'}, {'group': 'Event', 'id': 125, 'label': '西安电子科技大学'}, {'group': 'Event', 'id': 137, 'label': '重庆'}, {'group': 'Event', 'id': 145, 'label': '罗'}, {'group': 'Event', 'id': 94, 'label': '京'}, {'group': 'Event', 'id': 149, 'label': '重庆垫江县'}, {'group': 'Event', 'id': 160, 'label': '四川大学'}, {'group': 'Event', 'id': 164, 'label': '北大清华'}, {'group': 'Event', 'id': 168, 'label': '西安交通大学'}, {'group': 'Event', 'id': 185, 'label': '西五环'}];
+      var edges = [{'from': 182, 'label': '', 'to': 19}, {'from': 56, 'label': '', 'to': 19}, {'from': 58, 'label': '', 'to': 19}, {'from': 60, 'label': '', 'to': 19}, {'from': 113, 'label': '', 'to': 19}, {'from': 141, 'label': '', 'to': 19}, {'from': 68, 'label': '', 'to': 19}, {'from': 64, 'label': '', 'to': 19}, {'from': 70, 'label': '', 'to': 19}, {'from': 18, 'label': '', 'to': 19}, {'from': 20, 'label': '', 'to': 182}, {'from': 56, 'label': '', 'to': 23}, {'from': 58, 'label': '', 'to': 25}, {'from': 182, 'label': '', 'to': 27}, {'from': 182, 'label': '', 'to': 29}, {'from': 182, 'label': '', 'to': 31}, {'from': 60, 'label': '', 'to': 53}, {'from': 182, 'label': '', 'to': 35}, {'from': 182, 'label': '', 'to': 37}, {'from': 182, 'label': '', 'to': 39}, {'from': 182, 'label': '', 'to': 41}, {'from': 58, 'label': '', 'to': 43}, {'from': 56, 'label': '', 'to': 45}, {'from': 60, 'label': '', 'to': 47}, {'from': 182, 'label': '', 'to': 49}, {'from': 60, 'label': '', 'to': 53}, {'from': 60, 'label': '', 'to': 53}, {'from': 182, 'label': '', 'to': 73}, {'from': 56, 'label': '', 'to': 73}, {'from': 58, 'label': '', 'to': 73}, {'from': 60, 'label': '', 'to': 73}, {'from': 113, 'label': '', 'to': 73}, {'from': 64, 'label': '', 'to': 73}, {'from': 141, 'label': '', 'to': 73}, {'from': 68, 'label': '', 'to': 73}, {'from': 70, 'label': '', 'to': 73}, {'from': 72, 'label': '', 'to': 73}, {'from': 182, 'label': '', 'to': 93}, {'from': 184, 'label': '', 'to': 93}, {'from': 113, 'label': '', 'to': 105}, {'from': 141, 'label': '', 'to': 105}, {'from': 165, 'label': '', 'to': 93}, {'from': 183, 'label': '', 'to': 103}, {'from': 156, 'label': '', 'to': 103}, {'from': 125, 'label': '', 'to': 103}, {'from': 137, 'label': '', 'to': 105}, {'from': 145, 'label': '', 'to': 93}, {'from': 94, 'label': '', 'to': 105}, {'from': 149, 'label': '', 'to': 105}, {'from': 160, 'label': '', 'to': 103}, {'from': 164, 'label': '', 'to': 103}, {'from': 168, 'label': '', 'to': 103}, {'from': 185, 'label': '', 'to': 105}, {'from': 141, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 141}, {'from': 113, 'label': '', 'to': 184}, {'from': 184, 'label': '', 'to': 113}, {'from': 165, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 165}, {'from': 183, 'label': '', 'to': 184}, {'from': 184, 'label': '', 'to': 183}, {'from': 125, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 125}, {'from': 182, 'label': '', 'to': 184}, {'from': 184, 'label': '', 'to': 182}, {'from': 183, 'label': '', 'to': 137}, {'from': 137, 'label': '', 'to': 183}, {'from': 137, 'label': '', 'to': 184}, {'from': 184, 'label': '', 'to': 137}, {'from': 141, 'label': '', 'to': 145}, {'from': 145, 'label': '', 'to': 141}, {'from': 145, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 145}, {'from': 149, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 149}, {'from': 165, 'label': '', 'to': 156}, {'from': 182, 'label': '', 'to': 156}, {'from': 156, 'label': '', 'to': 165}, {'from': 156, 'label': '', 'to': 182}, {'from': 184, 'label': '', 'to': 160}, {'from': 160, 'label': '', 'to': 184}, {'from': 165, 'label': '', 'to': 164}, {'from': 164, 'label': '', 'to': 165}, {'from': 184, 'label': '', 'to': 168}, {'from': 168, 'label': '', 'to': 184}, {'from': 185, 'label': '', 'to': 183}, {'from': 185, 'label': '', 'to': 182}, {'from': 185, 'label': '', 'to': 184}, {'from': 183, 'label': '', 'to': 185}, {'from': 183, 'label': '', 'to': 182}, {'from': 182, 'label': '', 'to': 185}, {'from': 182, 'label': '', 'to': 183}, {'from': 184, 'label': '', 'to': 185}];
+
+      var container = document.getElementById("VIS_draw");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'circle',
+              size: 15,
+              font: {
+                  size: 15
+              }
+          },
+          edges: {
+              font: {
+                  size: 10,
+                  align: 'center'
+              },
+              color: 'red',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 1.2}
+              },
+              smooth: {enabled: true}
+          },
+          physics: {
+              enabled: true
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    

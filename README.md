@@ -1,5 +1,5 @@
 # TextGrapher
-Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文档，将文档进行关键信息提取，并进行结构化，并最终组织成图谱组织形式，形成对文章语义信息的图谱化展示。
+Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文档，将文档进行关键信息提取，进行结构化，并最终组织成图谱组织形式，形成对文章语义信息的图谱化展示。
 # 项目介绍
 如何用图谱和结构化的方式，即以简洁的方式对输入的文本内容进行最佳的语义表示是个难题。　本项目将对这一问题进行尝试，采用的方法为：输入一篇文档，将文档进行关键信息提取，并进行结构化，并最终组织成图谱组织形式，形成对文章语义信息的图谱化展示。　　
 # 使用方式

@@ -28,3 +28,4 @@ Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文
 ３）命名实体识别以及关键信息抽取受限于NLP的性能，在算法和方式上还存在多处不足。
 # Question?
  send mail to lhy_in_blcu@126.com  
+ If any question about the project or me ,see https://liuhuanyong.github.io/

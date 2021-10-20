@@ -88,7 +88,7 @@ class GraphShow():
 
     '''生成html文件'''
     def create_html(self, data_nodes, data_edges):
-        f = open('graph_show.html', 'w+')
+        f = open('graph_show.html', 'w+', encoding='utf-8')
         html = self.base.replace('data_nodes', str(data_nodes)).replace('data_edges', str(data_edges))
         f.write(html)
         f.close()
